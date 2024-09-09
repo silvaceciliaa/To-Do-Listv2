@@ -20,4 +20,14 @@ CREATE TABLE TASK (
     CONSTRAINT fk_user FOREIGN KEY (id_user) REFERENCES cecilia_schema.USER(id_user)
 );
 
-DROP TABLE cecilia_schema."USER" ;
+CREATE SEQUENCE cecilia_schema.seq_users
+  START WITH 1
+  INCREMENT BY 1
+  cache 1
+  no CYCLE;
+
+ CREATE SEQUENCE cecilia_schema.seq_tasks
+  START WITH 1
+  INCREMENT BY 1
+  cache 1
+  no CYCLE;
