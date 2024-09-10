@@ -14,24 +14,21 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TaskCreateDTO {
+public class TaskDTO {
 
-    @NotBlank(message = "Um título deve ser informado")
+    private Integer idTarefa;
+
     private String titulo;
 
     private String descricao;
 
-    @NotNull(message = "Data de início deve ser informada")
     private LocalDateTime iniciarEm;
 
-    @NotNull(message = "Data final deve ser informada")
     private LocalDateTime terminarEm;
 
     private Timestamp criadoEm;
 
-    @NotNull(message = "Prioridade deve ser informada")
     private TipoPrioridade prioridade;
 
-    @NotNull(message = "Informe o usuário responsável")
     private Integer user;
 }
