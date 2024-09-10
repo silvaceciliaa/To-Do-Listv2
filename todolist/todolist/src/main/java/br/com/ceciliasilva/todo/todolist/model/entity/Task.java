@@ -20,7 +20,7 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_TASK")
     @SequenceGenerator(name = "SEQ_TASK", sequenceName = "seq_task", allocationSize = 1)
     @Column(name = "id_task")
-    private String idTarefa;
+    private Integer idTarefa;
 
     @Column(name = "title")
     private String titulo;
