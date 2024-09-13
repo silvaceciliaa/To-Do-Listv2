@@ -41,6 +41,9 @@ public class Task {
     @Column(name = "priority")
     private TipoPrioridade prioridade;
 
+    @Column(name = "is_completed")
+    private Boolean feito;
+
     @Column(name = "id_user", insertable = false, updatable = false)
     private Integer idUser;
 }
