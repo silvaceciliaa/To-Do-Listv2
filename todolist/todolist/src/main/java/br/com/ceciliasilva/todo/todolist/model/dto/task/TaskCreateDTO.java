@@ -36,4 +36,6 @@ public class TaskCreateDTO {
     private Integer user;
 
     private Integer testeNao;
+
+    private Integer teste;
 }
