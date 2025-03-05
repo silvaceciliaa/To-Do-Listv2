@@ -35,5 +35,7 @@ public class TaskCreateDTO {
     @NotNull(message = "Informe o usuário responsável")
     private Integer user;
 
+    private Integer testeNao;
+
     private Integer teste;
 }
